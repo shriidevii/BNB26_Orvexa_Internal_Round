@@ -1,0 +1,15 @@
+sample_id,modality,file_path,source_type,generator,label,split
+COCO_000000000139,image,C:\Users\Shrid\BNB26_Orvexa_Internal_Round\data\poolE_real_images\COCO_000000000139.jpg,real_coco,,0,train
+COCO_000000000285,image,C:\Users\Shrid\BNB26_Orvexa_Internal_Round\data\poolE_real_images\COCO_000000000285.jpg,real_coco,,0,train
+COCO_000000000632,image,C:\Users\Shrid\BNB26_Orvexa_Internal_Round\data\poolE_real_images\COCO_000000000632.jpg,real_coco,,0,train
+COCO_000000000724,image,C:\Users\Shrid\BNB26_Orvexa_Internal_Round\data\poolE_real_images\COCO_000000000724.jpg,real_coco,,0,train
+COCO_000000000776,image,C:\Users\Shrid\BNB26_Orvexa_Internal_Round\data\poolE_real_images\COCO_000000000776.jpg,real_coco,,0,train
+gen_COCO_000000000139,image,C:\Users\Shrid\BNB26_Orvexa_Internal_Round\data\generated\raw\img\sdturbo_COCO_000000000139.jpg,generated,SD-Turbo,1,train
+gen_COCO_000000000285,image,C:\Users\Shrid\BNB26_Orvexa_Internal_Round\data\generated\raw\img\sdturbo_COCO_000000000285.jpg,generated,SD-Turbo,1,train
+gen_COCO_000000000632,image,C:\Users\Shrid\BNB26_Orvexa_Internal_Round\data\generated\raw\img\sdturbo_COCO_000000000632.jpg,generated,SD-Turbo,1,train
+LIBRI_001,audio,C:\Users\Shrid\BNB26_Orvexa_Internal_Round\data\real_audio_E\LIBRI_001.wav,real_librispeech,,0,train
+LIBRI_002,audio,C:\Users\Shrid\BNB26_Orvexa_Internal_Round\data\real_audio_E\LIBRI_002.wav,real_librispeech,,0,train
+LIBRI_003,audio,C:\Users\Shrid\BNB26_Orvexa_Internal_Round\data\real_audio_E\LIBRI_003.wav,real_librispeech,,0,train
+gen_aud_COCO_000000000139,audio,C:\Users\Shrid\BNB26_Orvexa_Internal_Round\data\generated\raw\aud\edge_COCO_000000000139.wav,generated,edge-TTS,1,train
+gen_aud_COCO_000000000285,audio,C:\Users\Shrid\BNB26_Orvexa_Internal_Round\data\generated\raw\aud\edge_COCO_000000000285.wav,generated,edge-TTS,1,train
+gen_aud_COCO_000000000632,audio,C:\Users\Shrid\BNB26_Orvexa_Internal_Round\data\generated\raw\aud\edge_COCO_000000000632.wav,generated,edge-TTS,1,train

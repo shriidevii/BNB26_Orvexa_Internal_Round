@@ -1,0 +1,17 @@
+{
+    "alpha": 0.1,
+    "confidence_level": 0.9,
+    "q_hat": 0.31,
+    "temperature": 1.15,
+    "classes": [
+        "AUTHENTIC",
+        "IMAGE_MANIPULATED",
+        "AUDIO_MANIPULATED",
+        "MULTIMODAL_SYNTHETIC"
+    ],
+    "verdicts": [
+        "AUTHENTIC",
+        "MANIPULATION SUSPECTED",
+        "INCONCLUSIVE"
+    ]
+}
