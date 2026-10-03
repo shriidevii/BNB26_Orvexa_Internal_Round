@@ -1,0 +1,85 @@
+# =========================
+# Python
+# =========================
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# =========================
+# Virtual environments
+# =========================
+.venv/
+venv/
+env/
+
+# =========================
+# Environment / secrets
+# =========================
+.env
+.env.*
+!.env.example
+
+# =========================
+# IDE
+# =========================
+.vscode/
+.idea/
+
+# =========================
+# Jupyter
+# =========================
+.ipynb_checkpoints/
+
+# =========================
+# Datasets / large files
+# =========================
+data/raw/
+data/generated/
+data/norm/
+data/poolE_real_images/
+data/poolC_real_images/
+data/real_audio_E/
+data/real_audio_C/
+
+# Keep metadata/manifests
+!data/*.csv
+!data/metadata/
+
+# =========================
+# Model weights
+# =========================
+*.pt
+*.pth
+*.bin
+*.ckpt
+*.safetensors
+
+# =========================
+# Cached features
+# =========================
+features/
+
+# =========================
+# Local results
+# =========================
+results/
+reports/
+
+# =========================
+# Logs
+# =========================
+*.log
+logs/
+
+# =========================
+# OS
+# =========================
+.DS_Store
+Thumbs.db
+
+# =========================
+# Temporary files
+# =========================
+*.tmp
+*.temp

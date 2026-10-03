@@ -1,0 +1,119 @@
+# ============================================================
+# TrustLayer Full Experiment Configuration
+# ============================================================
+
+project:
+  name: TrustLayer
+  version: "0.1.0"
+  environment: full
+
+reproducibility:
+  seed: 42
+
+device:
+  type: auto
+
+paths:
+  data: data
+  features: features
+  models: models
+  results: results
+  reports: reports
+
+data:
+  image_size: 224
+  audio_sample_rate: 16000
+  audio_duration_seconds: 10
+
+  splits:
+    train: 0.70
+    validation: 0.15
+    test: 0.15
+
+  generalization:
+    enabled: true
+
+models:
+  image:
+    architecture: efficientnet_b0
+    pretrained: true
+    num_classes: 2
+    freeze_backbone_initially: true
+
+  audio:
+    architecture: wav2vec2
+    pretrained: true
+    num_classes: 2
+    freeze_backbone_initially: true
+
+  fusion:
+    hidden_dim: 512
+    dropout: 0.30
+    num_classes: 2
+
+training:
+  batch_size: 16
+  num_workers: 4
+  epochs: 15
+  learning_rate: 0.0001
+  weight_decay: 0.0001
+
+  early_stopping:
+    enabled: true
+    patience: 3
+
+evaluation:
+  metrics:
+    - accuracy
+    - precision
+    - recall
+    - f1
+    - roc_auc
+    - pr_auc
+
+  confusion_matrix: true
+  roc_curve: true
+  precision_recall_curve: true
+
+generalization:
+  enabled: true
+
+  training_image_generators:
+    - SD-Turbo
+
+  held_out_image_generators:
+    - SDXL-Turbo
+
+  training_audio_generators:
+    - Piper
+    - edge-TTS
+
+  held_out_audio_generators:
+    - XTTS-v2
+    - gTTS
+
+uncertainty:
+  enabled: true
+  calibration: true
+  conformal_prediction: true
+
+cross_modal:
+  enabled: true
+  semantic_similarity: true
+  modality_conflict_detection: true
+  image_audio_consistency: true
+
+evidence_graph:
+  enabled: true
+  include_metadata: true
+  include_model_predictions: true
+  include_consistency_scores: true
+
+explainability:
+  enabled: true
+  visual_attribution: true
+  audio_attribution: true
+
+llm_explanation:
+  enabled: false
+  provider: gemini
